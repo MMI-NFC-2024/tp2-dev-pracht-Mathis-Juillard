@@ -1,7 +1,7 @@
 ---
 import PlotFigure from "./PlotFigure.astro";
 import * as Plot from "@observablehq/plot";
-import penguins from "../assets/untitled.json";
+import penguins from "../assets/penguins.json";
 
 interface Props { species: "Adelie" | "Gentoo" | "Chinstrap"; title?: string }
 const { species, title = `Graphique — ${species}` } = Astro.props;
