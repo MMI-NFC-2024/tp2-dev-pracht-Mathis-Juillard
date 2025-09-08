@@ -1,0 +1,13 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+<Layout title="TP2 — Iframe">
+  <h1 class="text-3xl font-bold mb-4">Version IFRAME</h1>
+
+  <iframe
+    name="viewer"
+    src="/species/Adelie"
+    class="w-full rounded border"
+    onload="this.style.height = (this.contentWindow?.document?.body?.scrollHeight || 900) + 'px';"
+  ></iframe>
+</Layout>
